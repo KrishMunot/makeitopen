@@ -12,7 +12,7 @@ While you can run the F8 App on your mobile device by downloading it from the [i
 
 Follow this short guide to setup and run the source code locally on OSX (the Android version of React Native has [some support](http://facebook.github.io/react-native/docs/linux-windows-support.html#content) for Windows and Linux testing).
 
-### Requirements
+## Requirements
 
 Before you get started, you'll need to install some pre-requisites:
 
@@ -20,23 +20,23 @@ Before you get started, you'll need to install some pre-requisites:
 2. [CocoaPods](http://cocoapods.org) 1.0+ (only for iOS)
 3. [MongoDB](https://www.mongodb.org/downloads) (needed to run Parse Server locally)
 
-### Setup
+## Setup
 
-#### 1. **Clone the repo**
+#### 1. Clone the repo
 
 ```
 $ git clone https://github.com/fbsamples/f8app.git
 $ cd f8app
 ```
 
-#### 2. **Install dependencies** (npm v3+):
+#### 2. Install dependencies (npm v3+):
 
 ```
 $ npm install
 $ (cd ios; pod install)        # only for iOS version
 ```
 
-#### 3. **Make sure MongoDB is running:**
+#### 3. Make sure MongoDB is running:
 
 ```
 $ lsof -iTCP:27017 -sTCP:LISTEN
@@ -48,13 +48,13 @@ or if using external MongoDB server, set `DATABASE_URI`:
 $ export DATABASE_URI=mongodb://example-mongo-hosting.com:1337/my-awesome-database
 ```
 
-#### 4. **Start Parse/GraphQL servers:**
+#### 4. Start Parse/GraphQL servers:
 
 ```
 $ npm start
 ```
 
-#### 5. **Import sample data** (the local Parse Server should be running):
+#### 5. Import sample data (the local Parse Server should be running):
 
 ```
 $ npm run import-data
@@ -68,7 +68,7 @@ Make sure everything works by visiting:
 <img src="static/images/screenshot-server@2x.png">
 
 
-#### 6. **Running the Android version**:
+#### 6. Running the Android version:
 
 ```
 $ react-native run-android
@@ -77,7 +77,7 @@ $ adb reverse tcp:8080 tcp:8080   # access the Packager and GraphQL server
 ```
 
 
-#### 7. **Running the iOS version:**
+#### 7. Running the iOS version:
 
 ```
 $ react-native run-ios
